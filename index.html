@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Unblocked Games: Untiled Baking Game</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://use.typekit.net/wxi7seg.css">
+  <link rel="icon" src="https://codehs.com/uploads/e3f1640d5eb95c5a5e7d2c170d19fa33" type="image/png">
+</head>
+
+<body>
+  <h1 class="title"> Untitled Baking Game</h1>
+
+  <div class="bar-wrapper">
+    <p class="level">Level 1</p>
+    <p id="xp-amount"></p>
+    <div class="progress-bar">
+      <div class="xp"></div>
+    </div>
+  </div>
+  <div class="main-wrapper">
+    <div class="click-wrapper">
+      <span class="eggs">0</span>
+      <div class="sparkle-wrapper">
+        <img class="icon-holder-img" src="https://codehs.com/uploads/e3f1640d5eb95c5a5e7d2c170d19fa33" alt="egg">
+      </div>
+      <span class="stats">1 egg/click</span>
+      <button id="click">Make Eggs</button>
+      <span id="gold-eggs">+ 1 Gold Egg</span>
+    </div>
+    <div class="upgrades">
+      <h2 class="egg-count">Eggs:</h2>
+      <div class="upgrade-wrapper">
+        <div class="upgrade">
+          <p>More Eggs Per Click</p>
+          <span class="egg-upg-desc">+ 1 eggs per click</span>
+          <button id="egg-click" class="upgrade-btn">10</button>
+        </div>
+        <div class="upgrade">
+          <p>Worker</p>
+          <span class="worker-upg-desc">+ 0 eggs / 3s</span>
+          <button id="worker" class="upgrade-btn">25</button>
+        </div>
+        <div class="upgrade">
+          <p>Golden Egg Chance</p>
+          <span class="gold-upg-desc">1%</span>
+          <button id="golden-egg" class="upgrade-btn">50</button>
+        </div>
+        <div class="upgrade">
+          <p>More Experience</p>
+          <span class="xp-upgrade-desc">+ 4</span>
+          <button id = "xp-upgrade">200</button>
+        </div>
+      </div>
+    </div>
+    <div class="golden-egg-upgrades">
+      <p class="gold-egg-counter">Gold Eggs: 0</p>
+      <div class="wrapper">
+        <div class="upgrade">
+          <p>20% more eggs</p>
+          <span class="multiplier-upg-desc">0%</span>
+          <button id="percent-upgrade">1</button>
+        </div>
+        <div class="upgrade">
+          <p>20% more XP</p>
+          <span class="xp-multipler-upg-desc">0%</span>
+          <button id="xp-percent-upgrade">3</button>
+        </div>
+      </div>
+    </div>
+    <div class="xp-perk-upgrades">
+      <h2 class="perk-count">Perks:</h2>
+      <div class="wrapper">
+        <div class="upgrade">
+          <p>+ 5 eggs per click</p>
+          <span class="multi-egg-click-upg-desc">0</span>
+          <button id = "multi-egg">2</button>
+        </div>
+        <div class="upgrade">
+          <p>Faster Workers</p>
+          <span class="fast-worker-desg"> 3s</span>
+          <button id = "multi-egg">2</button>
+        </div>
+        <div class="upgrade">
+          <p>More Gold Eggs</p>
+          <span class="multi-gold-egg-upg">+1</span>
+          <button id = "multi-gold-egg">5</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
