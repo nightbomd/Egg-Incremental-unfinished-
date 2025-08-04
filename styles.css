@@ -2,6 +2,9 @@ html {
   color: white;
   font-family: "dm-sans", sans-serif;
   font-style: normal;
+  text-shadow: 3px 0px 3px rgba(0, 0, 0, 0.312);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
 }
 
 .title {
@@ -24,8 +27,8 @@ h2 {
 
 .progress-bar {
   width: 100%;
-  border-radius: 20px;
-  border: 10px solid black;
+  border-radius: 40px;
+  border: 5px solid black;
   box-shadow: 0px 8px 32px rgb(99, 99, 99);
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
@@ -35,8 +38,9 @@ h2 {
 
 .xp {
   width: 0%;
-  background-color: #3182ce;
+  background: linear-gradient(to right, #387DE4 0%, #72A4EF 51%, #295BA7 77%, #3970C2 100%);
   z-index: 1;
+  border-radius: 40px;
   height: 100%;
   overflow: hidden;
   transition: width 0.3s ease;
@@ -64,7 +68,7 @@ button {
   color: white;
   background: #d2691e;
   border-radius: 20px;
-  box-shadow: 0 10px 0 brown, 0 15px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 0 #D54E19, 0 15px 20px rgba(0, 0, 0, 0.2);
   position: relative;
   top: 0;
   font-size: 1.2rem;
@@ -72,7 +76,7 @@ button {
 }
 button:hover {
   top: 5px;
-  box-shadow: 0 10px 0 brown, 0 15px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 0 #D54E19, 0 15px 20px rgba(0, 0, 0, 0.2);
 }
 
 .btn-afford {
@@ -81,7 +85,7 @@ button:hover {
 }
 
 body {
-  background-color: #fef9e7;
+  background: linear-gradient(#FAEFC8, #F3DC8A);
 }
 
 .eggs {
@@ -95,6 +99,8 @@ body {
   grid-template-columns: 2fr 1fr;
   grid-template-rows: auto;
   gap: 1rem;
+  width: 90%;
+  margin: 0 auto;
 }
 .main-wrapper .click-wrapper {
   height: -moz-fit-content;
@@ -113,7 +119,7 @@ body {
 .main-wrapper .click-wrapper button {
   background: #d2691e;
   border-radius: 20px;
-  box-shadow: 0 10px 0 brown, 0 15px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 0 #D54E19, 0 15px 20px rgba(0, 0, 0, 0.2);
   position: relative;
   top: 0;
   width: 10rem;
@@ -139,10 +145,8 @@ body {
 .main-wrapper .upgrade-wrapper .upgrade {
   background-color: #279058;
   padding: 2rem;
-  box-shadow: 0px 8px 32px rgb(99, 99, 99);
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
-  border-radius: 8px;
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -168,7 +172,6 @@ body {
   background-color: #8b4513;
   padding: 1rem;
   border-radius: 16px;
-  border-left: 10px solid #ed8936;
 }
 .golden-egg-upgrades .wrapper, .xp-perk-upgrades .wrapper {
   display: grid;
@@ -178,10 +181,8 @@ body {
 .golden-egg-upgrades .upgrade, .xp-perk-upgrades .upgrade {
   background-color: #279058;
   padding: 2rem;
-  box-shadow: 0px 8px 32px rgb(99, 99, 99);
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
-  border-radius: 8px;
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -213,6 +214,39 @@ body {
   animation: fadeUp 3s linear forwards;
   display: block !important;
   font-size: 2rem;
+}
+
+.click-wrapper, .upgrades, .golden-egg-upgrades, .xp-perk-upgrades {
+  background: linear-gradient(#8B4513, #A26C46, #703A13);
+  border-left: none !important;
+  box-shadow: 0px 8px 32px rgb(193, 193, 193);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+}
+.click-wrapper button, .upgrades button, .golden-egg-upgrades button, .xp-perk-upgrades button {
+  border-radius: 2px;
+  padding: 1rem 1.3rem 1rem 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+  background-color: #d2691e;
+  border: none;
+  box-shadow: 0px 8px 32px rgb(99, 99, 99);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  color: white;
+  background: #d2691e;
+  border-radius: 20px;
+  box-shadow: 0 10px 0 #D54E19, 0 15px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  top: 0;
+  font-size: 1.2rem;
+  min-width: 50%;
+}
+.click-wrapper button:hover, .upgrades button:hover, .golden-egg-upgrades button:hover, .xp-perk-upgrades button:hover {
+  top: 5px;
+  box-shadow: 0 10px 0 #D54E19, 0 15px 20px rgba(0, 0, 0, 0.2);
 }
 
 @keyframes rotateSparkle {
